@@ -7,7 +7,7 @@ export default async function adminPassChecker(ctx) {
         try {
             await setUserAdmin(ctx.message.from.id)
             ctx.session.awaitingAdminPass = false;
-            return ctx.reply(`Aвторизация успешна!\n\nИспользуй команду /admin, чтобы войти в админку.`)
+            return ctx.reply(`Authorization successful!\n\nUse the command /admin to access the admin panel.`)
         }
         catch (err) {
             return ctx.reply(err)

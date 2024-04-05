@@ -6,7 +6,7 @@ export default async function adminHandler(ctx) {
     await resetState(ctx)
     const user = await getUser(ctx.update.message.from.id);
     if (user.is_admin) {
-        return ctx.reply(`Выберите действие:`, await getAdminMenu(ctx))
+        return ctx.reply(`Choose action:`, await getAdminMenu(ctx))
     }
     return ctx.reply(`You don't have admin permission`)
 }

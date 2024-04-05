@@ -1,10 +1,10 @@
-export const BUTTON_WRITE_TO_ME = {
-    key: "BUTTON_WRITE_TO_ME",
-    value_en: "Write to me right now ✅"
+export const BUTTON = {
+    key: "BUTTON",
+    value_en: "Button text"
 }
 
 const constants = [
-    BUTTON_WRITE_TO_ME
+    BUTTON
 ];
 
 export default constants

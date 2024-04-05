@@ -5,7 +5,7 @@ import { errorLogger } from '../../utils/errorLogger.js'
 export default async function sendNewMessage(ctx, messagetype, message) {
     try {
         const users = await getUsersList();
-        await ctx.reply('Отправка сообщений запущена...')
+        await ctx.reply('Message sending initiated...')
         switch (messagetype) {
             case 'text':
                 for (const user of users) {
@@ -84,10 +84,10 @@ export default async function sendNewMessage(ctx, messagetype, message) {
 
         }
 
-        await ctx.reply('✅ Рассылка призведена успешно.')
+        await ctx.reply('✅ Message sending has been successfully completed.')
     }
     catch (err) {
-        await ctx.reply(`Ошибка при отправке рассылки: ${err}`)
-        errorLogger(`Ошибка при отправке рассылки: ${err}`)
+        await ctx.reply(`Error occurred while sending messages: ${err}`)
+        errorLogger(`Error occurred while sending messages: ${err}`)
     }
 }

@@ -1,21 +1,21 @@
 export const HELLO_TITLE = {
     key: "HELLO_TITLE",
-    value_en: "🌐 Hi\\! And welcome to my channel\\."
+    value_en: "Welcome message"
 }
 
 export const HELLO_FIRST_PARAGRAPH = {
     key: "HELLO_FIRST_PARAGRAPH",
-    value_en: "🟢 My name is Virat\\. I am a professional analyst for Aviator\\."
+    value_en: "Your first paragraph"
 }
 
 export const HELLO_SECOND_PARAGRAPH = {
     key: "HELLO_SECOND_PARAGRAPH",
-    value_en: "🟢 If you want to get winning signals with 99\\% probability for Aviator\\, text me 👉  @virat_expert and I will explain you how to get started\\. "
+    value_en: "Your second paragraph"
 }
 
 export const HELLO_LAST_PARAGRAPH = {
     key: "HELLO_LAST_PARAGRAPH",
-    value_en: `📣 Text me with "VIP" at 👉  @virat_expert free winning signals\\.`
+    value_en: `Your last paragraph`
 }
 
 const constants = [

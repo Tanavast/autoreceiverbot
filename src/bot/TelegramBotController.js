@@ -46,7 +46,6 @@ class TelegramBotController {
     }
 
     async handleJoinRequest(ctx) {
-        console.log(ctx.chat.id, ctx.from.id)
         await ctx.telegram.sendMessage(ctx.from.id, `${userInterface.PREVIEW_TITLE}\n${userInterface.PREVIEW_FIRST_PARAGRAPH}\n\n${userInterface.PREVIEW_LAST_PARAGRAPH}`)
         await ctx.telegram.approveChatJoinRequest(ctx.chat.id, ctx.from.id)
     }
@@ -60,11 +59,6 @@ class TelegramBotController {
         // SEND MESSAGE handling
         if (ctx.session.awaitingMessage) {
             await sendMessageHandler(ctx)
-        }
-        if (ctx.message.from.is_bot) {
-            // Handle the message from the redirected user
-            // This could involve providing instructions, processing commands, etc.
-            ctx.reply('Welcome! You have been redirected from the channel. How can I assist you?');
         }
     }
 }

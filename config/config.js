@@ -1,4 +1,4 @@
 export const botSettings = {
     "lang": "en",
-    "account": "https://t.me/virat_expert"
+    "account": "https://t.me/YOUR_ACCOUNT"
 }

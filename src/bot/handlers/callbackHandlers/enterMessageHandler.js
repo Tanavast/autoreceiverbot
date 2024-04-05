@@ -6,7 +6,7 @@ export default async function handleEnterMessage(ctx) {
     const validUser = await getUser(ctx.update.callback_query.from.id)
     if (validUser.is_admin) {
         ctx.session.awaitingMessage = true
-        return ctx.reply('Введите сообщение:')
+        return ctx.reply('Type the message:')
     }
-    return ctx.reply('У вас нет прав администратора.')
+    return ctx.reply(`You don't have permission to send messsages`)
 }
